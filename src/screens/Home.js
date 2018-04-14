@@ -6,17 +6,20 @@ import {
   StyleSheet,
 } from 'react-native'
 
-const Home = () => (
+const Home = (props) => {
+  const { navigation } = props
+  return (
   <View style={styles.container} >
     <TouchableOpacity
       testID="button"
       style={styles.button}
-      onPress={() => { console.warn('EiEi') }}
+      onPress={() => { navigation.navigate('MAP') }}
     >
       <Text style={styles.text} >Button</Text>
     </TouchableOpacity>
   </View>
 )
+}
 
 const styles = StyleSheet.create({
   container: {

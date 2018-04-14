@@ -1,4 +1,8 @@
 import React from 'react'
-import Home from './screens/Home'
+import AppNavigator from './navigation/AppNavigator'
 
-export default Home
+const App = () => (
+  <AppNavigator />
+)
+
+export default App
